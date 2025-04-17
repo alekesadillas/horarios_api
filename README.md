@@ -7,14 +7,18 @@ Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base
 
 ## Prerequisitos
 
+
 Para que nuestra app pueda ejecutarse correctamente necesita de ciertos paquetes, dichos paquetes se tiene que instalar mediante `pip` en al terminal.
 Afortunadamente encontraras tambien un archivo con todos los paquetes que necesitas para poder ejecutarla: **"requirements.txt"**.
 
 Para la instalacion abre una terminal dentro del proyecto en VSCode y ejecuta el siguiente comando:
 
-`pip install -r requirements. txt`
+`pip install -r requirements.txt`
 
 Acontinuacion se instalaran todos los paquetes necesarios para la ejecucion.
+
+
+> NOTA: DEBES MANTENER EN EJECUCION EL CONTENDOR DOCKER `postgres` EN TODO MOMENTO
 
 
 ## Paso 1: Iniciar la API

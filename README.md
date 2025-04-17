@@ -4,6 +4,19 @@ Listo! Ya tenemos corriendo nuestros contendores, tanto nuestro Sistema Operativ
 Ahora pasemos al uso de nuestra API.
 Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base de datos _**”horario_v2”**_.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
 
+
+## Prerquisitos
+
+Para que nuestra app pueda ejecutarse correctamente necesita de ciertos paquetes, dichos paquetes se tiene que instalar mediante `pip` en al terminal.
+Afortunadamente encontraras tambien un archivo con todos los paquetes que necesitas para poder ejecutarla: **"requirements.txt"**.
+
+Para la instalacion abre una terminal dentro del proyecto en VSCode y ejecuta el siguiente comando:
+
+`pip install -r requirements. txt`
+
+Acontinuacion se instalaran todos los paquetes necesarios para la ejecucion.
+
+
 ## Paso 1: Iniciar la API
 Nuestra API esta desarrollada mediante el framework Flask en Python, por lo que para incializarla nos buscaremos en la barra lateral de nuestro VSCode  la carpeta src y abriremos el archivo app.py.
 

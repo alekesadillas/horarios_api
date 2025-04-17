@@ -1,6 +1,30 @@
 # Uso del API
 
-Listo! Ya tenemos corriendo nuestros contendores, tanto nuestro Sistema Operativo con nuestra API , tanto como nuestro servidor PostgreeSQL.
+
+Para el uso del API Necesitamos crear una base de datos PostgreSQL hosteada mediante localhost.
+
+>  En este proyecto se esta escuchando mediante el puerto 5432:5432 en localhost
+
+
+Para crear nuestra tabla ejecutamos la siguiente SQL Query:
+
+`CREATE TABLE public.horario_v2 (
+    id SERIAL PRIMARY KEY,
+    seccion VARCHAR(100),
+    hora_inicio TIME,
+    hora_fin TIME,
+    estado VARCHAR(50),
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecha_modificacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+`
+
+Una vez creada, en el siguiente archivo se encuentra la INSERT QUERY para llenar la tabla.
+
+[insert.txt](https://github.com/user-attachments/files/19805981/insert.txt)
+
+Y listo! Tendriamos lista nuestra Base de datos
+
 Ahora pasemos al uso de nuestra API.
 Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base de datos _**”horario_v2”**_.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
 

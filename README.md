@@ -5,7 +5,7 @@ Ahora pasemos al uso de nuestra API.
 Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base de datos _**”horario_v2”**_.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
 
 
-## Prerquisitos
+## Prerequisitos
 
 Para que nuestra app pueda ejecutarse correctamente necesita de ciertos paquetes, dichos paquetes se tiene que instalar mediante `pip` en al terminal.
 Afortunadamente encontraras tambien un archivo con todos los paquetes que necesitas para poder ejecutarla: **"requirements.txt"**.

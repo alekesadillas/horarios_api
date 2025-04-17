@@ -1,6 +1,6 @@
 # Uso del API
 
-Listo! Ya tenemos corriendo nuestros contendores, tanto nuestro Sistema Operativo con nuestra API , tanto como nuestro servidor PostreSQL.
+Listo! Ya tenemos corriendo nuestros contendores, tanto nuestro Sistema Operativo con nuestra API , tanto como nuestro servidor PostgreeSQL.
 Ahora pasemos al uso de nuestra API.
 Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base de datos _**”horario_v2”**_.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
 

@@ -41,33 +41,44 @@ Y daremos clic en SEND
 
 Y eso seria todo el contenido de la guía, a continuación, estarán los métodos posibles para peticiones con la API. ¡Suerte!
 
+
 Obtener todos los horarios
-GET http://127.0.0.1:5000/api/horarios/
+
+`GET http://127.0.0.1:5000/api/horarios/`
+
 
 Obtener horarios por ID
-GET http://127.0.0.1:5000/api/horarios/”id”
-Ejemplo: http://127.0.0.1:5000/api/horarios/60
+
+`GET http://127.0.0.1:5000/api/horarios/”id”`
+Ejemplo: `http://127.0.0.1:5000/api/horarios/60`
+
 
 Obtener horarios por salón
-GET http://127.0.0.1:5000/api/horarios/”seccion”
-Ejemplo: http://127.0.0.1:5000/api/horarios/s6
 
+`GET http://127.0.0.1:5000/api/horarios/”seccion”
+`
+Ejemplo: `http://127.0.0.1:5000/api/horarios/s6`
 
 
 INSERT nuevo horario
-POST http://127.0.0.1:5000/api/horarios/add
+
+`POST http://127.0.0.1:5000/api/horarios/add`
+
 Ejemplo:
 
  ![image](https://github.com/user-attachments/assets/62ea6424-6b4d-4b97-863a-76822c495502)
 
 
 DELETE Horario por ID
-DELETE http://127.0.0.1:5000/api/horarios/delete/”id”
-Ejemplo:
-DELETE http://127.0.0.1:5000/api/horarios/delete/145
+
+`DELETE http://127.0.0.1:5000/api/horarios/delete/”id”`
+
+Ejemplo: `DELETE http://127.0.0.1:5000/api/horarios/delete/145`
+
 
 UPDATE Horario por ID
-PUT http://127.0.0.1:5000/api/horarios/update/”id”
+
+`PUT http://127.0.0.1:5000/api/horarios/update/”id”`
 Ejemplo:
 
  ![image](https://github.com/user-attachments/assets/d7504678-4247-4439-8a5b-bdfbda4d33a4)

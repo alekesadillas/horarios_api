@@ -2,7 +2,7 @@
 
 Listo! Ya tenemos corriendo nuestros contendores, tanto nuestro Sistema Operativo con nuestra API , tanto como nuestro servidor PostreSQL.
 Ahora pasemos al uso de nuestra API.
-Esta API puede realizar consultas POST, INSERT, PUT y DELETE en nuestra base de datos ”horario_v2”.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
+Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base de datos _**”horario_v2”**_.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
 
 ## Paso 1: Iniciar la API
 Nuestra API esta desarrollada mediante el framework Flask en Python, por lo que para incializarla nos buscaremos en la barra lateral de nuestro VSCode  la carpeta src y abriremos el archivo app.py.
@@ -10,7 +10,7 @@ Nuestra API esta desarrollada mediante el framework Flask en Python, por lo que 
 ![image](https://github.com/user-attachments/assets/68bec4bf-2d97-4e6f-8189-f015171fb49f)
 
 
-Una vez abierto en la barra superior de nuestro archivo daremos click en el botón RUN (icono play), y esperaremos que nos muestre el siguiente output en la terminal:
+Una vez abierto en la barra superior de nuestro archivo daremos click en el botón **RUN** (icono play), y esperaremos que nos muestre el siguiente output en la terminal:
 
 ![image](https://github.com/user-attachments/assets/0a65e94c-ac2f-48a2-a11b-cc60e6a59807)
 
@@ -19,6 +19,7 @@ La URL que nos marca es la direccion HTTP por la cual podemos acceder a nuestra 
 
 ## Paso 2: Generar peticiones en Postman.
 Ya que sabemos que nuestra API esta en ejecución nos dirigimos a la aplicación de Postman.
+
 •	Una vez dentro daremos click en nueva petición HTTP.
 
 ![image](https://github.com/user-attachments/assets/778e217c-f3d1-4919-ba71-f95eef4c815d)

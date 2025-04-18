@@ -1,4 +1,14 @@
-# Instrucciones de Instalacion
+
+# Proyecto “Automatización de A/C mediante IoT”
+
+Mediante el uso de la siguiente API se planea implementar un sistema de automatización
+para el encendido y apagado de A/C dentro la institución mediante tecnologías IoT y hardware adicional.
+
+Actualmente al APi cuenta con la capacidad de crear Reglas Manuales y acceder a los
+horarios registrados para aplicar Reglas Automaticas sobre el control del A/C.
+
+
+## Instrucciones de Instalacion
 
 
 Para la clonacion de nuestro proyecto abrimos la carpeta donde queramos alamacenar el proyecto y abriremos Visual Studio Code en ella.
@@ -21,8 +31,8 @@ Ahora te daras cuenta que la estructrura de nuestro proyecto es la siguiente:
 }
 ```
 
-Necesitamos crear un entorno virtual donde almacenaremos nuestros paquetes y ejecutaremos nuestra app
-por lo que abriremos una terminal en la carpeta de nuestro proyecto y ejecutaremos el siguiente comando: `python -m venv .venv`
+Necesitamos crear un entorno virtual donde almacenaremos nuestros paquetes y ejecutaremos nuestra app,
+por lo que abriremos una terminal en la raiz de la carpeta de nuestro proyecto y ejecutaremos el siguiente comando: `python -m venv .venv`
 Y lo inicializaremos con:
 
 `.\.venv\Scripts\Activate.ps1 `
@@ -83,8 +93,6 @@ Para la instalacion abre una terminal dentro del proyecto en VSCode y ejecuta el
 
 Acontinuacion se instalaran todos los paquetes necesarios para la ejecucion.
 
-
-> NOTA: DEBES MANTENER EN EJECUCION EL CONTENDOR DOCKER `postgres` EN TODO MOMENTO
 
 
 

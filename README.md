@@ -152,17 +152,43 @@ Y eso seria todo el contenido de la guía, a continuación, estarán los método
 - INSERT nuevo horario
     - `POST http://127.0.0.1:5000/api/horarios/add`
     - Ejemplo:
-      ![image](https://github.com/user-attachments/assets/62ea6424-6b4d-4b97-863a-76822c495502)
+      ![image](https://github.com/user-attachments/assets/bf55e903-2d41-4b8e-8f61-4077e65bab1c)
+
+      Lo que nos obtendria como respuesta un JSON retornando el ID del nuevo elemento
+      Ejemplo:
+
+      ```
+      {
+          145
+      }
+      ```
 
 
 - DELETE Horario por ID
     - `DELETE http://127.0.0.1:5000/api/horarios/delete/”id”`
     - Ejemplo: `DELETE http://127.0.0.1:5000/api/horarios/delete/145`
 
+      Lo que nos obtendria como respuesta un JSON retornando el ID del elemento eliminado
+      Ejemplo:
+
+      ```
+      {
+          145
+      }
+      ```
 
 - UPDATE Horario por ID
     - `PUT http://127.0.0.1:5000/api/horarios/update/”id”`
     - Ejemplo:
-      ![image](https://github.com/user-attachments/assets/d7504678-4247-4439-8a5b-bdfbda4d33a4)
+      ![image](https://github.com/user-attachments/assets/a3376827-ee24-44a2-a75f-12d4fdc3d334)
+
+      Lo que nos obtendria como respuesta un JSON retornando el ID del elemento modificado
+      Ejemplo:
+
+      ```
+      {
+          145
+      }
+      ```
 
 

@@ -8,6 +8,10 @@ Actualmente, la API permite:
 - Acceder a **horarios registrados**
 - Aplicar **Reglas Automáticas** sobre el control del A/C
 
+# 📺 Video de Expliacion del proyecto
+
+Puedese encontrar ademas un video donde explicamos a detale la instalcion y funcionamiento del API mediante el siguiente [enlace](https://drive.google.com/file/d/1jMRnKIJWOciu8km_7vFuX77x7IgEVb8W/view?usp=sharing)
+
 ---
 
 ## 📦 Instalación del Proyecto

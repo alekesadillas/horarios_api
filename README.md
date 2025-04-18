@@ -1,7 +1,38 @@
-# Uso del API
+# Instrucciones de Instalacion
+
+
+Para la clonacion de nuestro proyecto abrimos la carpeta donde queramos alamacenar el proyecto y abriremos Visual Studio Code en ella.
+
+Una vez dentro la carpeta en VSCode, abriremos una terminal y ejecutaremos el siguiente comando de GIT
+
+`git clone https://github.com/alekesadillas/horarios_api.git`
+
+Y .... listo! Ya tendremos nuestro proyecto clonado exitosamente.
+
+Ahora te daras cuenta que la estructrura de nuestro proyecto es la siguiente:
+
+
+```
+}
+    /src
+    .env
+    README.md
+    requirements.txt
+}
+```
+
+Necesitamos crear un entorno virtual donde almacenaremos nuestros paquetes y ejecutaremos nuestra app
+por lo que abriremos una terminal en la carpeta de nuestro proyecto y ejecutaremos el siguiente comando: `python -m venv .venv`
+Y lo inicializaremos con:
+
+`.\.venv\Scripts\Activate.ps1 `
+
+
+## Pre-requisitos
 
 
 Para el uso del API Necesitamos crear una base de datos PostgreSQL hosteada mediante localhost.
+
 
 >  En este proyecto se esta escuchando mediante el puerto 5432:5432 en localhost
 
@@ -19,21 +50,32 @@ Para crear nuestra tabla ejecutamos la siguiente SQL Query:
 );
 `
 
+
 Una vez creada, en el siguiente archivo se encuentra la INSERT QUERY para llenar la tabla.
 
 [insert.txt](https://github.com/user-attachments/files/19805981/insert.txt)
 
-Y listo! Tendriamos lista nuestra Base de datos
-
-Ahora pasemos al uso de nuestra API.
-Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base de datos _**”horario_v2”**_.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
+Y listo! Tendriamos lista nuestra Base de datos.
 
 
-## Prerequisitos
 
 
-Para que nuestra app pueda ejecutarse correctamente necesita de ciertos paquetes, dichos paquetes se tiene que instalar mediante `pip` en al terminal.
-Afortunadamente encontraras tambien un archivo con todos los paquetes que necesitas para poder ejecutarla: **"requirements.txt"**.
+
+
+## Requisitos
+
+
+Para que nuestra app pueda ejecutarse correctamente necesita de ciertos paquetes, dichos paquetes se tienen que instalar mediante `pip` en el terminal.
+Afortunadamente encontraras tambien un archivo con todos los paquetes que necesitas para poder ejecutarla:
+
+```
+}
+    /src
+    .env
+    README.md
+    requirements.txt    <--
+}
+```
 
 Para la instalacion abre una terminal dentro del proyecto en VSCode y ejecuta el siguiente comando:
 
@@ -44,6 +86,12 @@ Acontinuacion se instalaran todos los paquetes necesarios para la ejecucion.
 
 > NOTA: DEBES MANTENER EN EJECUCION EL CONTENDOR DOCKER `postgres` EN TODO MOMENTO
 
+
+
+# Uso del API
+
+Ahora SI pasemos al uso de nuestra API.
+Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base de datos _**”horario_v2”**_.  Para realizar consultas y verificar su funcionalidad haremos uso del ayudante Postman.
 
 ## Paso 1: Iniciar la API
 Nuestra API esta desarrollada mediante el framework Flask en Python, por lo que para incializarla nos buscaremos en la barra lateral de nuestro VSCode  la carpeta src y abriremos el archivo app.py.
@@ -62,12 +110,10 @@ La URL que nos marca es la direccion HTTP por la cual podemos acceder a nuestra 
 Ya que sabemos que nuestra API esta en ejecución nos dirigimos a la aplicación de Postman.
 
 •	Una vez dentro daremos click en nueva petición HTTP.
-
-![image](https://github.com/user-attachments/assets/778e217c-f3d1-4919-ba71-f95eef4c815d)
+    ![image](https://github.com/user-attachments/assets/778e217c-f3d1-4919-ba71-f95eef4c815d)
 
 
 •	Para fines de esta guía únicamente haremos una petición GET, para ello pegaremos la URL que nos arrojo nuestra terminal además de unos prefijos por lo que se vería algo así : 
-
 ![image](https://github.com/user-attachments/assets/d425a993-facb-4b7d-9e3f-edcf1ec82620)
 
 

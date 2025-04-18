@@ -227,17 +227,17 @@ Y eso seria todo el contenido de la guía, a continuación, estarán los método
 --- 
 ## 👨‍💻 Integrantes del Equipo
 
-- Santiago Sánchez Kevin Alejandro  
-- Segovia Cazares Isaac  
-- Padrón Zaleta Jared Alfredo  
-- Sordel Guzmán Andrea  
-- Márquez Ruiz José De Jesús  
-- Flores Torres José Gerardo  
-- Garibaldi Zúñiga Daniel  
-- Zaleta Diaz Dalia Nohemí  
-- Avalos Pérez Juan Felipe  
-- Gallegos Rodríguez Jessica Rubí  
-- Caudillo Luna Obet Yahir  
+- Santiago Sánchez Kevin Alejandro           alekesadillas
+- Segovia Cazares Isaac                      isaacsego
+- Padrón Zaleta Jared Alfredo                Jaresito2024  
+- Sordel Guzmán Andrea                       andysordel
+- Márquez Ruiz José De Jesús                 VIIIMaus
+- Flores Torres José Gerardo                 GerFlo0
+- Garibaldi Zúñiga Daniel                    DanielGaribaldiZ
+- Zaleta Diaz Dalia Nohemí                   DaliaN303
+- Avalos Pérez Juan Felipe                   ironspider
+- Gallegos Rodríguez Jessica Rubí            taesi23
+- Caudillo Luna Obet Yahir                   HarushiFPS
 
 ---
 

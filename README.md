@@ -11,13 +11,13 @@ horarios registrados para aplicar Reglas Automaticas sobre el control del A/C.
 ## Instrucciones de Instalacion
 
 
-Para la clonacion de nuestro proyecto abrimos la carpeta donde queramos alamacenar el proyecto y abriremos Visual Studio Code en ella.
+Para la clonacion de nuestro proyecto abrimos la carpeta donde queramos alamacenar el proyecto y abriremos Visual Studio Code en ella.  
 
 Una vez dentro la carpeta en VSCode, abriremos una terminal y ejecutaremos el siguiente comando de GIT
 
-`git clone https://github.com/alekesadillas/horarios_api.git`
+`git clone https://github.com/alekesadillas/horarios_api.git`  
 
-Y .... listo! Ya tendremos nuestro proyecto clonado exitosamente.
+Y .... listo! Ya tendremos nuestro proyecto clonado exitosamente.  
 
 Ahora te daras cuenta que la estructrura de nuestro proyecto es la siguiente:
 
@@ -32,10 +32,8 @@ Ahora te daras cuenta que la estructrura de nuestro proyecto es la siguiente:
 ```
 
 Necesitamos crear un entorno virtual donde almacenaremos nuestros paquetes y ejecutaremos nuestra app,
-por lo que abriremos una terminal en la raiz de la carpeta de nuestro proyecto y ejecutaremos el siguiente comando: `python -m venv .venv`
-Y lo inicializaremos con:
-
-`.\.venv\Scripts\Activate.ps1 `
+por lo que abriremos una terminal en la raiz de la carpeta de nuestro proyecto y ejecutaremos el siguiente comando: `python -m venv .venv`  
+Y lo inicializaremos con: `.\.venv\Scripts\Activate.ps1 `
 
 
 ## Pre-requisitos
@@ -104,12 +102,12 @@ Esta API puede realizar consultas **POST, INSERT, PUT y DELETE** en nuestra base
 ## Paso 1: Iniciar la API
 Nuestra API esta desarrollada mediante el framework Flask en Python, por lo que para incializarla nos buscaremos en la barra lateral de nuestro VSCode  la carpeta src y abriremos el archivo app.py.
 
-![image](https://github.com/user-attachments/assets/68bec4bf-2d97-4e6f-8189-f015171fb49f)
+![image](https://github.com/user-attachments/assets/1f78a89d-0329-4664-b7b2-20ca04a056f0)
 
 
 Una vez abierto en la barra superior de nuestro archivo daremos click en el botón **RUN** (icono play), y esperaremos que nos muestre el siguiente output en la terminal:
 
-![image](https://github.com/user-attachments/assets/0a65e94c-ac2f-48a2-a11b-cc60e6a59807)
+![image](https://github.com/user-attachments/assets/540fb4ba-7e31-4f04-9373-353e401ce4f1)
 
  
 La URL que nos marca es la direccion HTTP por la cual podemos acceder a nuestra API y realizar las peticiones mediante Postman.
@@ -117,65 +115,54 @@ La URL que nos marca es la direccion HTTP por la cual podemos acceder a nuestra 
 ## Paso 2: Generar peticiones en Postman.
 Ya que sabemos que nuestra API esta en ejecución nos dirigimos a la aplicación de Postman.
 
-•	Una vez dentro daremos click en nueva petición HTTP.
-    ![image](https://github.com/user-attachments/assets/778e217c-f3d1-4919-ba71-f95eef4c815d)
+* Una vez dentro daremos click en nueva petición HTTP
+* ![image](https://github.com/user-attachments/assets/301df238-f5cd-4b7a-8c6b-6977d92f2d50)
 
-
-•	Para fines de esta guía únicamente haremos una petición GET, para ello pegaremos la URL que nos arrojo nuestra terminal además de unos prefijos por lo que se vería algo así : 
-![image](https://github.com/user-attachments/assets/d425a993-facb-4b7d-9e3f-edcf1ec82620)
+* Para fines de esta guía únicamente haremos una petición GET, para ello pegaremos la URL que nos arrojo nuestra terminal además de unos prefijos por lo que se vería algo así :
+  ![image](https://github.com/user-attachments/assets/8b43b66a-1efd-4b70-b3d3-217f65ac2ae8)
 
 
 Y daremos clic en SEND
 
 
-
-•	La respuesta de nuestra API debería ser un listado de todos los horarios dentro de nuestra base de datos
-
- ![image](https://github.com/user-attachments/assets/91605fb8-22e6-47f3-8896-8de4920514fa)
+* La respuesta de nuestra API debería ser un listado de todos los horarios dentro de nuestra base de datos
+  ![image](https://github.com/user-attachments/assets/155e618a-6de9-4e98-8d1a-2f447a49a478)
 
 
-Y eso seria todo el contenido de la guía, a continuación, estarán los métodos posibles para peticiones con la API. ¡Suerte!
+
+Y eso seria todo el contenido de la guía, a continuación, estarán los métodos posibles para peticiones con la API. ¡Suerte!  
+
+## Metodos
 
 
-Obtener todos los horarios
-
-`GET http://127.0.0.1:5000/api/horarios/`
-
-
-Obtener horarios por ID
-
-`GET http://127.0.0.1:5000/api/horarios/”id”`
-Ejemplo: `http://127.0.0.1:5000/api/horarios/60`
+- GET todos los horarios
+    - `GET http://127.0.0.1:5000/api/horarios/`
 
 
-Obtener horarios por salón
-
-`GET http://127.0.0.1:5000/api/horarios/”seccion”
-`
-Ejemplo: `http://127.0.0.1:5000/api/horarios/s6`
+- GET horarios por ID
+    - `GET http://127.0.0.1:5000/api/horarios/”id”`
+    - Ejemplo: `http://127.0.0.1:5000/api/horarios/60`
 
 
-INSERT nuevo horario
-
-`POST http://127.0.0.1:5000/api/horarios/add`
-
-Ejemplo:
-
- ![image](https://github.com/user-attachments/assets/62ea6424-6b4d-4b97-863a-76822c495502)
+- GET horarios por salón
+    - `GET http://127.0.0.1:5000/api/horarios/”seccion”`
+    - Ejemplo: `http://127.0.0.1:5000/api/horarios/s6`
 
 
-DELETE Horario por ID
+- INSERT nuevo horario
+    - `POST http://127.0.0.1:5000/api/horarios/add`
+    - Ejemplo:
+      ![image](https://github.com/user-attachments/assets/62ea6424-6b4d-4b97-863a-76822c495502)
 
-`DELETE http://127.0.0.1:5000/api/horarios/delete/”id”`
 
-Ejemplo: `DELETE http://127.0.0.1:5000/api/horarios/delete/145`
+- DELETE Horario por ID
+    - `DELETE http://127.0.0.1:5000/api/horarios/delete/”id”`
+    - Ejemplo: `DELETE http://127.0.0.1:5000/api/horarios/delete/145`
 
 
-UPDATE Horario por ID
-
-`PUT http://127.0.0.1:5000/api/horarios/update/”id”`
-Ejemplo:
-
- ![image](https://github.com/user-attachments/assets/d7504678-4247-4439-8a5b-bdfbda4d33a4)
+- UPDATE Horario por ID
+    - `PUT http://127.0.0.1:5000/api/horarios/update/”id”`
+    - Ejemplo:
+      ![image](https://github.com/user-attachments/assets/d7504678-4247-4439-8a5b-bdfbda4d33a4)
 
 

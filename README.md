@@ -227,17 +227,19 @@ Y eso seria todo el contenido de la guía, a continuación, estarán los método
 --- 
 ## 👨‍💻 Integrantes del Equipo
 
-- Santiago Sánchez Kevin Alejandro           alekesadillas
-- Segovia Cazares Isaac                      isaacsego
-- Padrón Zaleta Jared Alfredo                Jaresito2024  
-- Sordel Guzmán Andrea                       andysordel
-- Márquez Ruiz José De Jesús                 VIIIMaus
-- Flores Torres José Gerardo                 GerFlo0
-- Garibaldi Zúñiga Daniel                    DanielGaribaldiZ
-- Zaleta Diaz Dalia Nohemí                   DaliaN303
-- Avalos Pérez Juan Felipe                   ironspider
-- Gallegos Rodríguez Jessica Rubí            taesi23
-- Caudillo Luna Obet Yahir                   HarushiFPS
+| Nombre completo                              | Usuario de GitHub                         |
+|---------------------------------------------|-------------------------------------------|
+| Santiago Sánchez Kevin Alejandro            | [alekesadillas](https://github.com/alekesadillas) |
+| Segovia Cazares Isaac                       | [isaacsego](https://github.com/isaacsego) |
+| Padrón Zaleta Jared Alfredo                 | [Jaresito2024](https://github.com/Jaresito2024) |
+| Sordel Guzmán Andrea                        | [andysordel](https://github.com/andysordel) |
+| Márquez Ruiz José De Jesús                  | [VIIIMaus](https://github.com/VIIIMaus) |
+| Flores Torres José Gerardo                  | [GerFlo0](https://github.com/GerFlo0) |
+| Garibaldi Zúñiga Daniel                     | [DanielGaribaldiZ](https://github.com/DanielGaribaldiZ) |
+| Zaleta Diaz Dalia Nohemí                    | [DaliaN303](https://github.com/DaliaN303) |
+| Avalos Pérez Juan Felipe                    | [Iron-Spider2099](https://github.com/Iron-Spider2099) |
+| Gallegos Rodríguez Jessica Rubí             | [taesi23](https://github.com/taesi23) |
+| Caudillo Luna Obet Yahir                    | [HarushiFPS](https://github.com/HarushiFPS) |
 
 ---
 

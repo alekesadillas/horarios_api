@@ -20,13 +20,12 @@ Actualmente, la API permite:
 git clone https://github.com/alekesadillas/horarios_api.git
 ```
 
-¡Y listo! El proyecto estará clonado. La estructura es la siguiente:
+¡Y listo! El proyecto estará clonado. La estructura se vera asi :
 
 ```
 /horarios_api
 │
 ├── /src
-├── .env
 ├── README.md
 └── requirements.txt
 ```

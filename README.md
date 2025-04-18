@@ -189,6 +189,21 @@ Y eso seria todo el contenido de la guía, a continuación, estarán los método
       {
           145
       }
-      ```
+      ```  
+
+> ### Integrantes del Equipo:  
+> Santiago Sánchez Kevin Alejandro  
+> Segovia Cazares Isaac  
+> Padrón Zaleta Jared Alfredo  
+> Sordel Guzmán Andrea  
+> Márquez Ruiz José De Jesús  
+> Flores Torres José Gerardo  
+> Garibaldi Zúñiga Daniel  
+> Zaleta Diaz Dalia Nohemí  
+> Avalos Pérez Juan Felipe  
+> Gallegos Rodríguez Jessica Rubí  
+> Caudillo Luna Obet Yahir
+
+> Instituto Tecnologico de Matamoros - Ingenieria en Sistemas Computacionales -  Programacion Backend
 
 

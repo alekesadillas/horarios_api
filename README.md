@@ -10,7 +10,7 @@ Actualmente, la API permite:
 
 # 📺 Video de Expliacion del proyecto
 
-Puedes encontrar ademas un video donde explicamos a detale la instalcion y funcionamiento del API mediante el siguiente [enlace](https://drive.google.com/file/d/1jMRnKIJWOciu8km_7vFuX77x7IgEVb8W/view?usp=sharing)
+Puedes encontrar ademas un video donde explicamos a detalle la instalación y funcionamiento del API mediante el siguiente [enlace](https://drive.google.com/file/d/1jMRnKIJWOciu8km_7vFuX77x7IgEVb8W/view?usp=sharing)
 
 ---
 

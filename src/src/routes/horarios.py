@@ -1,5 +1,7 @@
 from flask import Blueprint, jsonify, request
 from datetime import datetime
+from services.arduino_cloud_service import actualizar_status_en_arduino_cloud
+import requests
 
 #Entities
 from models.entities.horarios import Horarios
@@ -64,6 +66,7 @@ def add_horario():
         new_id = horarios_model.add_horario(horario)
 
         if new_id:
+            actualizar_status_en_arduino_cloud(estado)
             return jsonify({'id': new_id})
         else:
             return jsonify({'message': 'Failed to insert new Horario'}), 500
@@ -103,6 +106,7 @@ def update_horario(id):
         affected_rows = horarios_model.update_horario(horario)
 
         if affected_rows == 1:
+            actualizar_status_en_arduino_cloud(estado)
             return jsonify(id)
         else:
             return jsonify({'message': 'Failed to update Horario'}), 404

@@ -9,126 +9,131 @@ body {
     background-attachment: fixed;  /* Opcional: para que no se desplace al hacer scroll */
 }
  
-/* Contenedor general */
+/* === Contenedor general === */
 .container {
     margin-top: 30px;
- 
 }
- 
-/* Título principal */
+
+/* === Título principal === */
 .container h2 {
     margin-top: 30px;
     color: #020202;
     font-weight: 600;
     text-align: center;
 }
- 
-/* Navbar elegante */
+
+/* === Navbar elegante === */
 .navbar {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px); /* Agrega un efecto moderno */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
- 
+
 .navbar-brand,
 .navbar-nav .nav-link {
     color: #424421 !important;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
- 
+
 .navbar-nav .nav-link:hover {
     color: #342690 !important;
 }
- 
-/* Contenedor del formulario */
+
+/* === Contenedor del formulario y tarjetas === */
 .form-container,
 .card {
-    background-color: hsl(0, 7%, 73%);
-    padding: 5px;
-    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Más legible sobre imagen */
+    padding: 20px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(143, 157, 18, 0.15);
     margin-bottom: 30px;
-    transition: transform 0.3s ease;
-    align-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
 .card:hover {
     transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(143, 157, 18, 0.25);
 }
- 
-/* Estilo de botones */
+
+/* === Estilo de botones === */
 .btn-primary {
     background-color: #d6b213;
     border-color: #22009b;
     border-radius: 12px;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
-   
-   
+    color: #000;
 }
- 
+
 .btn-primary:hover {
     background-color: #e1c214;
     border-color: #cfaf12;
-    color: #000000;
+    color: #000;
 }
- 
+
 .btn-info {
     background-color: #022655;
     border-color: #0448a0;
-    color: #ffffff;
+    color: #fff;
     border-radius: 12px;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
- 
+
 .btn-info:hover {
     background-color: #98c1d9;
     color: #000;
 }
- 
-/* Input mejorado */
-.form-control, .form-select {
+
+/* === Inputs y selects === */
+.form-control,
+.form-select {
     border-radius: 8px;
 }
- 
-/* Animación al mostrar formulario */
+
+/* === Animación al mostrar formulario === */
 #formHorario {
     animation: fadeIn 0.4s ease-in-out;
 }
- 
+
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
- 
-/* Select de filtro */
+
+/* === Select de filtro === */
 #filtroSeccion {
     max-width: 200px;
 }
- 
-/* Responsividad móvil */
+
+/* === Responsividad móvil === */
 @media (max-width: 576px) {
-    .form-container, .card {
+    .form-container,
+    .card {
         padding: 15px;
     }
- 
+
     .btn {
         width: 100%;
         margin-bottom: 10px;
     }
- 
+
     .container h2 {
         font-size: 1.4rem;
-        text-align: center;
     }
- 
-    #filtroSeccion {
+
+    #filtroSeccion,
+    #obtenerDatosBtn {
         width: 100%;
         margin-bottom: 10px;
     }
- 
-    #obtenerDatosBtn {
-        width: 100%;
-    }
 }
+
  

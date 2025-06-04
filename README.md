@@ -224,6 +224,29 @@ Y eso seria todo el contenido de la guía, a continuación, estarán los método
   }
   ```
 
+### 🛜 Modo de Uso Web App
+
+
+- **Una vez en la ventana del navegador nos dirijimos a la siguiente URL**
+  ```http
+  http://127.0.0.1:5000/index 
+  ```
+
+  Esto nos llevara a la interfaz grafica y de inicio de sesion donde accederemos al panel de administracion
+
+  Las credenciales de acceso son las siguientes:
+
+   ```
+    Usuario: admin
+
+   ```
+   ```
+    password: 12345
+
+   ```  
+
+
+
 --- 
 ## 👨‍💻 Integrantes del Equipo
 

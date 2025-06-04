@@ -1,0 +1,134 @@
+/* Fondo y tipografía general */
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url('../image/fondo.png');
+    background-size: cover;        /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;   /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que se repita */
+    background-attachment: fixed;  /* Opcional: para que no se desplace al hacer scroll */
+}
+
+
+/* Contenedor general */
+.container {
+    margin-top: 30px;
+
+}
+
+/* Título principal */
+.container h2 {
+    margin-top: 30px;
+    color: #020202; 
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Navbar elegante */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #424421 !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #342690 !important;
+}
+
+/* Contenedor del formulario */
+.form-container,
+.card {
+    background-color: hsl(0, 7%, 73%);
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(143, 157, 18, 0.15);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    align-content: center;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+/* Estilo de botones */
+.btn-primary {
+    background-color: #d6b213;
+    border-color: #22009b;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+    
+}
+
+.btn-primary:hover {
+    background-color: #e1c214;
+    border-color: #cfaf12;
+    color: #000000;
+}
+
+.btn-info {
+    background-color: #022655;
+    border-color: #0448a0;
+    color: #ffffff;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #98c1d9;
+    color: #000;
+}
+
+/* Input mejorado */
+.form-control, .form-select {
+    border-radius: 8px;
+}
+
+/* Animación al mostrar formulario */
+#formHorario {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Select de filtro */
+#filtroSeccion {
+    max-width: 200px;
+}
+
+/* Responsividad móvil */
+@media (max-width: 576px) {
+    .form-container, .card {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    #filtroSeccion {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #obtenerDatosBtn {
+        width: 100%;
+    }
+}

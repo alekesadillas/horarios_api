@@ -1,7 +1,6 @@
 import os
 import requests
 
-
 # Variables de entorno
 ARDUINO_CLIENT_ID = os.environ.get('ARDUINO_CLIENT_ID')
 ARDUINO_CLIENT_SECRET = os.environ.get('ARDUINO_CLIENT_SECRET')
@@ -62,4 +61,3 @@ def actualizar_status_en_arduino_cloud(nuevo_estado):
         patch_resp.raise_for_status()
     except requests.RequestException as e:
         raise RuntimeError(f"Error al actualizar variable status: {e}")
-    

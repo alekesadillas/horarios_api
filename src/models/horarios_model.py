@@ -84,7 +84,19 @@ class horarios_model():
 
             connection = get_connection()
 
+
             with connection.cursor() as cursor:
+                #Validar duplicado exacto de seccion, hora_inicio y hora_fin
+                cursor.execute("""
+                    SELECT COUNT(*) FROM horario_v2 
+                    WHERE seccion = %s AND hora_inicio = %s AND hora_fin = %s
+                """, (horario.seccion, horario.hora_inicio, horario.hora_fin))
+
+                count = cursor.fetchone()[0]
+                if count > 0:
+                    raise Exception("Ya existe un horario con la misma seccion, hora_inicio y hora_fin")
+
+                # Si no existe, insertamos el nuevo horario
                 cursor.execute("""
                     INSERT INTO horario_v2 (seccion, hora_inicio, hora_fin, estado, fecha_creacion, fecha_modificacion)
                     VALUES (%s, %s, %s, %s, %s, %s)

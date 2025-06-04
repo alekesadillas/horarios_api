@@ -1,5 +1,7 @@
 from flask import Blueprint, jsonify, request
 from datetime import datetime
+from services.arduino_cloud_service import actualizar_status_en_arduino_cloud
+import requests
 
 #Entities
 from models.entities.horarios import Horarios
@@ -47,8 +49,8 @@ def add_horario():
         hora_inicio = request.json['hora_inicio']
         hora_fin = request.json['hora_fin']
         estado = request.json['estado']
-        fecha_creacion = datetime.strptime(request.json['fecha_creacion'], "%d/%m/%Y").date()
-        fecha_modificacion = datetime.strptime(request.json['fecha_modificacion'], "%d/%m/%Y").date()
+        fecha_creacion = datetime.strptime(request.json['fecha_creacion'], "%Y-%m-%d").date()
+        fecha_modificacion = datetime.strptime(request.json['fecha_modificacion'], "%Y-%m-%d").date()
 
 
         # No pasamos el ID porque la base lo genera
@@ -64,10 +66,16 @@ def add_horario():
         new_id = horarios_model.add_horario(horario)
 
         if new_id:
+
+            actualizar_status_en_arduino_cloud(estado)
+
             return jsonify({'id': new_id})
+            # Después de insertar en la base de datos
+
         else:
             return jsonify({'message': 'Failed to insert new Horario'}), 500
-
+            
+ 
     except Exception as ex:
         return jsonify({'message': str(ex)}), 500
 
@@ -79,11 +87,16 @@ def update_horario(id):
         seccion = request.json['seccion']
         hora_inicio = request.json['hora_inicio']
         hora_fin = request.json['hora_fin']
-        estado = request.json['estado']
-        fecha_creacion = datetime.strptime(request.json['fecha_creacion'], "%d/%m/%Y").date()
-        fecha_modificacion = datetime.strptime(request.json['fecha_modificacion'], "%d/%m/%Y").date()
 
-        # Crear el objeto Horarios con los datos actualizados
+        # Convertir 't'/'f' a un booleano
+        estado_raw = request.json['estado']
+        estado = 't' if estado_raw == 't' or estado_raw is True else 'f'
+
+        # Cambiar el formato de fecha a '%Y-%m-%d'
+        fecha_creacion = datetime.strptime(request.json['fecha_creacion'], "%Y-%m-%d").date()
+        fecha_modificacion = datetime.strptime(request.json['fecha_modificacion'], "%Y-%m-%d").date()
+
+        # Crear el objeto Horarios
         horario = Horarios(
             id=id,
             seccion=seccion,
@@ -94,18 +107,19 @@ def update_horario(id):
             fecha_modificacion=fecha_modificacion
         )
 
+        # Actualizar en la base de datos
         affected_rows = horarios_model.update_horario(horario)
 
         if affected_rows == 1:
+            actualizar_status_en_arduino_cloud(estado)
             return jsonify(id)
         else:
             return jsonify({'message': 'Failed to update Horario'}), 404
 
     except Exception as ex:
+        # Imprimir el error completo en los logs
+        print(f"Error al actualizar el horario: {str(ex)}")
         return jsonify({'message': str(ex)}), 500
-
-
-
 
 @main.route('/delete/<int:id>', methods=['DELETE'])
 def delete_horario(id):
